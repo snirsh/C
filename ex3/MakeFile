@@ -1,0 +1,29 @@
+CC= gcc
+CFLAGS= -c -Wvla -Wall -Wextra -std=c99
+
+# All Target
+all: SudokuSolver libGenericDFS.a
+
+# Exceutables
+libGenericDFS.a: GenericDFS.o
+    ar rcs libGenericDFS.a GenericDFS.o
+
+SudokuSolver: SudokuSolver.o SudokuTree.o libGenericDFS.a
+    $(CC) SudokuSolver.o SudokuTree.o -L. -lGenericDFS -lm -o SudokuSolver
+
+# Object files
+SudokuTree.o: SudokuTree.c
+    $(CC) $$(CFLAGS) SudokuTree.c -o SudokuTree.o
+
+GenericDFS.o: GenericDFS.c
+    $(CC) $$(CFLAGS) GenericDFS.c -o GenericDFS.o
+
+SudokuSolver.o: SudokuSolver.c
+    $(CC) $$(CFLAGS) SudokuSolver.c -o SudokuSolver.o
+
+
+# Other Targets
+clean:
+    -rm -f *.o SudokuSolver libGenericDFS.a
+
+.PHONY: clean

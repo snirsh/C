@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/cygdrive/c/Users/Snir/Google Drive/C/ex3_final/GenericDFS.c
+GenericDFS.h
+/cygdrive/c/Users/Snir/Google Drive/C/ex3_final/GenericDFS.h
+stdlib.h
+-
+
+/cygdrive/c/Users/Snir/Google Drive/C/ex3_final/GenericDFS.h
+
+/cygdrive/c/Users/Snir/Google Drive/C/ex3_final/SudokuSolver.c
+stdlib.h
+-
+string.h
+/cygdrive/c/Users/Snir/Google Drive/C/ex3_final/string.h
+SudokuTree.h
+/cygdrive/c/Users/Snir/Google Drive/C/ex3_final/SudokuTree.h
+
+/cygdrive/c/Users/Snir/Google Drive/C/ex3_final/SudokuTree.c
+SudokuTree.h
+/cygdrive/c/Users/Snir/Google Drive/C/ex3_final/SudokuTree.h
+
+/cygdrive/c/Users/Snir/Google Drive/C/ex3_final/SudokuTree.h
+stdio.h
+-
+stdlib.h
+-
+math.h
+-
+GenericDFS.h
+/cygdrive/c/Users/Snir/Google Drive/C/ex3_final/GenericDFS.h
+

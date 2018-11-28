@@ -1,0 +1,1 @@
+valgrind --log-fd=1 $SUBMISSION$/sudukusolver $SUDUKU_TEST_FOLDER$/s0 | grep -o -P "no leaks are possible"

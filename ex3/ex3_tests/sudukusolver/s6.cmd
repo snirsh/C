@@ -1,0 +1,1 @@
+$SUBMISSION$/sudukusolver $SUDUKU_TEST_FOLDER$/s6 | grep -o -P "not a valid suduku file"
